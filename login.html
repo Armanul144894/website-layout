@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      nav a {
+        text-decoration: none;
+        margin-right: 20px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        border: 2px solid royalblue;
+        background-color: beige;
+      }
+      .login-form input {
+        margin-bottom: 1em;
+        font-size: 15px;
+        padding: 5px 10px;
+        margin: 5px;
+      }
+      input[type="submit"] {
+        background-color: tomato;
+        color: white;
+        width: 20%;
+        padding: 5px 10px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>
+          <a href="">Home</a>
+          <a href="">Dashboard</a>
+          <a href="">Login</a>
+        </span>
+        <span>
+          <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+          <a href=""><i class="fa-solid fa-user"></i></a>
+        </span>
+      </nav>
+    </header>
+    <div class="container">
+      <form class="login-form">
+        <h1>Login form</h1>
+        Name:
+        <input type="text" name="name" placeholder="enter your name" required />
+        Email:
+        <input
+          type="email"
+          name="email"
+          id=""
+          placeholder="Enter your email"
+          required
+        />
+        Password: <input type="password" name="password" id="" required />
+        <input type="submit" value="login" />
+      </form>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/08a90380bb.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
